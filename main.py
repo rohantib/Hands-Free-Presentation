@@ -3,17 +3,20 @@ import Tkinter as Tk
 from app import DetectApp
 import detectors
 import signal
-import pyautogui
+import pynput
 import json
 
+keyboard = pynput.keyboard.Controller()
 
 def left_key_press():
-    pyautogui.press('left')
+    keyboard.press(pynput.keyboard.Key.left)
+    keyboard.release(pynput.keyboard.Key.left)
     print('Heard "previous slide" - executing left key press')
 
 
 def right_key_press():
-    pyautogui.press('right')
+    keyboard.press(pynput.keyboard.Key.right)
+    keyboard.release(pynput.keyboard.Key.right)
     print('Heard "next slide" - executing right key press')
 
 
