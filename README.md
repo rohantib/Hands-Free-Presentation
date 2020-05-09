@@ -28,7 +28,7 @@ If you do not have Homebrew installed, please download it [here](http://brew.sh/
 
 Open up a terminal and run:
 ```bash
-sudo apt-get install python-pip sox python-pyaudio libatlas-base-dev python-dev python-xlib
+sudo apt-get install python-pip sox python-pyaudio libatlas-base-dev python-dev
 pip install pynput
 ```
 
